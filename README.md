@@ -1,2 +1,4 @@
 # Tugas UNS
- Kumpulan-kumpulan tugas perkuliahan di UNS di prodi Sains Data
+ Kumpulan tugas perkuliahan di UNS di prodi Sains Data 2023
+
+P.s. You can fork as reference.
