@@ -49,8 +49,11 @@ int main() {
 
     //Rumus
     float luas_alas_piramida = panjang_alas_piramida * lebar_alas_piramida;
+    float sisi_miring_lebar_piramida = sqrt( ( ( lebar_alas_piramida / 2 ) * ( lebar_alas_piramida / 2 ) ) + ( tinggi_piramida * tinggi_piramida ) );
+    float sisi_miring_panjang_piramida = sqrt( ( ( panjang_alas_piramida / 2 ) * ( panjang_alas_piramida / 2 ) ) + ( tinggi_piramida * tinggi_piramida ) );
+
     float hasil_volume_piramida = ( 1.f / 3.f ) * luas_alas_piramida * tinggi_piramida;
-    float luas_permukaan_piramida = luas_alas_piramida + ( ( 2 * ((1.f / 2.f) * panjang_alas_piramida * tinggi_piramida)) + ( 2 * ((1.f / 2.f) * lebar_alas_piramida * tinggi_piramida) ) );
+    float luas_permukaan_piramida = luas_alas_piramida + ( ( 2 * ((1.f / 2.f) * panjang_alas_piramida * sisi_miring_panjang_piramida)) + ( 2 * ((1.f / 2.f) * lebar_alas_piramida * sisi_miring_lebar_piramida) ) );
 
     // ===== Soal Nomor 3 ===== 
     printf("\n===== Soal 3 : Maximal Tinggi Lemparan =====\n\n");
