@@ -60,11 +60,11 @@ int main() {
     float g = 9.18;
 
     //Perintah Input
-    printf("Masukkan kecepatan lemparan awal Andi ( m ) : ");
+    printf("Masukkan kecepatan lemparan awal Andi ( m/s ) : ");
     scanf("%f", &va);
     while (getchar() != '\n');
 
-    printf("Masukkan kecepatan lemparan awal Roni ( m ) : ");
+    printf("Masukkan kecepatan lemparan awal Roni ( m/s ) : ");
     scanf("%f", &vr);
     while (getchar() != '\n');
 
@@ -84,17 +84,17 @@ int main() {
     printf("\n===== Soal 5 : Mencegah Tabrakan Mobil Pak Dengklek =====\n\n");
 
     //Variabel
-    float kecepatan, kecepatan_km, perlambatan;
+    float vo, kecepatan, perlambatan;
     const float jarak = 50.f; 
 
     //Perintah Input
 
     printf("Masukkan kecepatan awal mobil Pak Dengklek (km/jam): ");
-    scanf("%f", &kecepatan_km);
+    scanf("%f", &vo);
     while (getchar() != '\n');
 
     //Rumus
-    kecepatan = kecepatan_km * (1000.f / 3600.f);
+    kecepatan = vo * (1000.f / 3600.f);
     perlambatan = (kecepatan * kecepatan / (2.f * jarak));
 
     // ========== Jawaban ===========
